@@ -7,6 +7,7 @@ import Form from './components/Form.js'
 
 
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -15,33 +16,12 @@ class App extends Component {
       host: "",
       team: "",
       location: "",
-      date: "",
-      time: "",
       number: ""
     };
-
-    this.updatePost = this.updatePost.bind ( this );
-    this.deletePost = this.deletePost.bind ( this );
-    this.createPost = this.createPost.bind ( this );
-    this.handleChange = this.handleChange.bind ( this );
-  }
-
-  componentDidMount () {
-  
-  }
-  createPost(){
-
-
-  }
-
-  updatePost () {
-
-
-  }
-
-  deletePost () {
-
-
+  //  this.updateEdit = this.updateEdit.bind ( this );
+   // this.updateCreate = this.updateCreate.bind ( this );
+   // this.updateDelete = this.updateDelete.bind ( this );
+     this.handleChange = this.handleChange.bind ( this );
   }
 
   handleChange(prop, val){
@@ -55,6 +35,7 @@ class App extends Component {
   
     return (
       <div className="App">
+    
         
    
 
@@ -63,12 +44,11 @@ class App extends Component {
          host={this.state.host}
          team={this.state.team}
          location={this.state.location}
-         date={this.state.date}
-         time={this.state.time}
          number={this.state.number}
          handleChange={this.handleChange}
         
         />
+ 
         <Form/>
       </div>
     );

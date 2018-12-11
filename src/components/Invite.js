@@ -1,4 +1,5 @@
 import React from 'react'
+import DatePickerInput from './DatePicker'
 
 function Invite (props) {
 
@@ -9,8 +10,7 @@ return (
     <input placeholder="Host" onChange={(e) => props.handleChange('host', e.target.value) } type="text"/>
         <input placeholder="Team" onChange={(e) => props.handleChange('team', e.target.value) } type="text"/>
         <input placeholder="Location" onChange={(e) => props.handleChange('location', e.target.value) } type="text"/>
-        <input placeholder="Date" onChange={(e) => props.handleChange('date', e.target.value) } type="text"/>
-        <input placeholder="Time" onChange={(e) => props.handleChange('time', e.target.value) } type="text"/>
+        <DatePickerInput/>
         <input placeholder="Number Attending" onChange={(e) => props.handleChange('number', e.target.value) } type="text"/></div>
 
 )
