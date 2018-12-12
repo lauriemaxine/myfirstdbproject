@@ -28,7 +28,7 @@ class App extends Component {
     this.setState({
       [prop]:val
     })
-  }
+  
     
   render() {
     console.log(this.state)
@@ -36,9 +36,6 @@ class App extends Component {
     return (
       <div className="App">
     
-        
-   
-
         <Nav/>
         <Invite
          host={this.state.host}
@@ -46,7 +43,7 @@ class App extends Component {
          location={this.state.location}
          number={this.state.number}
          handleChange={this.handleChange}
-        
+    
         />
  
         <Form/>
@@ -55,7 +52,7 @@ class App extends Component {
   }
 
 
-}   
+  }  
 
 
 export default App;
